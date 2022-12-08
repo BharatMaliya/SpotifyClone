@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="icon" type="image/x-icon" href="/img/fav.png">
+    <script src="https://kit.fontawesome.com/d26d3a4ce1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home_style.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="header">
+
+            <div class="wrapper">
+
+                <div class="sidebar">
+                    <div class="logo">
+                        <i class="fa-brands fa-spotify"></i>
+                        <span class="logo_text">Spotify</span>
+                        <sup id="registered"><i class="fa fa-registered"></i></sup>
+                    </div>
+                    <div class="verticalnav">
+                        <ul>
+                            <li><a href=""><i class="fa fa-home"></i>Home</a></li>
+                            <li><a href=""><i class="fa fa-magnifying-glass"></i>Search</a></li>
+                            <li><a href=""><i class="fa fa-music"></i>Your Library</a></li>
+                        </ul>
+                    </div>
+                    <div class="verticalnav">
+                        <ul>
+                            <li><a href=""><i class="fa-regular fa-square-plus"></i>Creat Playlist</a></li>
+                            <li><a href=""><i id="heart" class="fa fa-heart"></i>Liked Songs</a></li>
+                        </ul>
+                    </div>
+                    <div class="cooki_privacy">
+                        <ul>
+                            <li><a href=""> Cookies</a></li>
+                            <li><a href="">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mainbar">
+                    <nav class="mainnav">
+                        <div class="leftnav">
+                            <span>&#9668;</span>
+                            <span>&#9658;</span>
+                        </div>
+                        <div class="rightnav">
+                            <span class="signup"><a href="snup.html">Sign up</a></span>
+                            <span class="login"><a href="lgn.html">Log in</a></span>
+                        </div>
+                    </nav>
+
+                    <!-- Tranding now------------------------------------ -->
+                    <!-- <span id="top"></span> -->
+
+                    <section class="sections">
+                        <div class="type_heading">
+                            <h1>Trending now</h1>
+                            <h6><a href="#top">SHOW ALL</a></h6>
+                        </div>
+
+                        <div class="type_cards">
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/trendingnow/apnabanale.jpg" alt="">
+                                    <h4>Apna Bana Le (From "Bhediya")</h4>
+                                    <p>Arijit Singh, Sachin-Jigar</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="1"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                                <audio src="aud/drop.mp3"></audio>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/trendingnow/ct.jpg" alt="">
+                                    <h4>Champagne Talk</h4>
+                                    <p>King</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="2"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/trendingnow/her.jpg" alt="">
+                                    <h4>Her</h4>
+                                    <p>Subh</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="3"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/trendingnow/ontop.jpg" alt="">
+                                    <h4>On Top</h4>
+                                    <p>karan aujla
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="4"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/trendingnow/paris.jpg" alt="">
+                                    <h4>Paris Ka Trip</h4>
+                                    <p>Yo Yo Honey Singh, Millind Gaba, Asli GOLD</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="5"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/trendingnow/ramsetu.jpg" alt="">
+                                    <h4>Ram Setu</h4>
+                                    <p>Narci</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="6"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/trendingnow/rf.jpg" alt="">
+                                    <h4>Ranjithame From "Vaarasudu" [Telugu]</h4>
+                                    <p>Anurag Kulkarni, M. M. Manasi</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="7"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/trendingnow/todh.jpg" alt="">
+                                    <h4>Todh</h4>
+                                    <p>Prince Narula, Munawar Faruqui</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="8"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/trendingnow/tum.jpg" alt="">
+                                    <h4>Tum Kyu Chale Aate Ho (Unplugged)</h4>
+                                    <p>Prashant Katheriya</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="9"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/trendingnow/woh.jpg" alt="">
+                                    <h4>Woh</h4>
+                                    <p>Ikka, Dino James, Badshah</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="10"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- Popular new releseas------------------------------------ -->
+
+
+                    <section class="sections">
+                        <div class="type_heading">
+                            <h1>Popular new releases</h1>
+                            <h6><a href="#top">SHOW ALL</a></h6>
+                        </div>
+                        <div class="type_cards">
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularnewreleases/Dawn FM, The Weeknd.jpg" alt="">
+                                    <h4>Dawn FM</h4>
+                                    <p>The Weeknd</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="1"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularnewreleases/Don’t Wake Me Up, Jonas Blue, Why Don't We.jpg"
+                                        alt="">
+                                    <h4>Don’t Wake Me Up</h4>
+                                    <p>Jonas Blue, Why Don't We</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="2"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularnewreleases/DS4EVER, Gunna.jpg" alt="">
+                                    <h4>DS4EVER</h4>
+                                    <p>Gunna</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="3"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularnewreleases/God Father (Telugu), Thaman S, Anantha Sriram, Ramajogayya Sastry.jpg"
+                                        alt="">
+                                    <h4>God Father (Telugu)</h4>
+                                    <p>Thaman S, Anantha Sriram, Ramajogayya Sastry</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="4"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularnewreleases/If I Can’t Have Love, I Want Power, Halsey.jpg"
+                                        alt="">
+                                    <h4>If I Can’t Have Love</h4>
+                                    <p>I Want Power, Halsey</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="5"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularnewreleases/Kantara (Original Motion Picture Soundtrack), B. Ajaneesh Loknath.jpg"
+                                        alt="">
+                                    <h4>Kantara (Original Motion Picture Soundtrack)</h4>
+                                    <p>B. Ajaneesh Loknath</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="6"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularnewreleases/Ponniyin Selvan Part-1 (Original Motion Picture Soundtrack), A.R. Rahman.jpg"
+                                        alt="">
+                                    <h4>Ponniyin Selvan Part-1 (Original Motion Picture Soundtrack)</h4>
+                                    <p>A.R. Rahman</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="7"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularnewreleases/Thallumaala, Vishnu Vijay.jpg" alt="">
+                                    <h4>Thallumaala</h4>
+                                    <p>Vishnu Vijay</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="8"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularnewreleases/There And Back Again, Eric Nam.jpg" alt="">
+                                    <h4>There And Back Again</h4>
+                                    <p>Eric Nam</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="9"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularnewreleases/Vikram (Original Motion Picture Soundtrack), Anirudh Ravichander.jpg"
+                                        alt="">
+                                    <h4>Vikram (Original Motion Picture Soundtrack)</h4>
+                                    <p>Anirudh Ravichander</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="10"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+
+                    <!-- Popular radio------------------------------------ -->
+
+                    <section class="sections">
+                        <div class="type_heading">
+                            <h1>Popular radio</h1>
+                            <h6><a href="#top">SHOW ALL</a></h6>
+                        </div>
+                        <div class="type_cards">
+
+                            <div class="card_case">
+
+                                <div class="type_card">
+                                    <img src="img/popularradio/A.R. Rahman Radio.jpg" alt="">
+                                    <h4>A.R. Rahman Radio</h4>
+                                    <p>By Spotify</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="1"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularradio/AP Dhillon Radio.jpg" alt="">
+                                    <h4>AP Dhillon Radio</h4>
+                                    <p>By Spotify</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="2"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_case">
+
+                                <div class="type_card">
+                                    <img src="img/popularradio/Arijit Singh Radio.jpg" alt="">
+                                    <h4>Arijit Singh Radio</h4>
+                                    <p>By Spotify</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="3"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_case">
+
+                                <div class="type_card">
+                                    <img src="img/popularradio/Atif Aslam Radio.jpg" alt="">
+                                    <h4>Atif Aslam Radio</h4>
+                                    <p>By Spotify</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="4"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_case">
+
+                                <div class="type_card">
+                                    <img src="img/popularradio/Jubin Nautiyal Radio.jpg" alt="">
+                                    <h4>Jubin Nautiyal Radio</h4>
+                                    <p>By Spotify</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="5"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_case">
+
+                                <div class="type_card">
+                                    <img src="img/popularradio/KK Radio.jpg" alt="">
+                                    <h4>KK Radio</h4>
+                                    <p>By Spotify</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="6"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_case">
+
+                                <div class="type_card">
+                                    <img src="img/popularradio/Neha Kakkar Radio.jpg" alt="">
+                                    <h4>Neha Kakkar Radio</h4>
+                                    <p>By Spotify</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="7"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_case">
+
+                                <div class="type_card">
+                                    <img src="img/popularradio/Pritam Radio.jpg" alt="">
+                                    <h4>Pritam Radio</h4>
+                                    <p>By Spotify</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="8"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_case">
+
+                                <div class="type_card">
+                                    <img src="img/popularradio/Shubh Radio.jpg" alt="">
+                                    <h4>Shubh Radio</h4>
+                                    <p>By Spotify</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="13"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_case">
+
+                                <div class="type_card">
+                                    <img src="img/popularradio/Sidhu Moose Wala Radio.jpg" alt="">
+                                    <h4>Sidhu Moose Wala Radio</h4>
+                                    <p>By Spotify</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="10"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- Popular albums------------------------------------ -->
+
+                    <section class="sections">
+                        <div class="type_heading">
+                            <h1>Popular albums</h1>
+                            <!-- <h6>SHOW ALL</h6> -->
+                            <h6><a href="#top">SHOW ALL</a></h6>
+                        </div>
+                        <div class="type_cards">
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularalbums/Champagne Talk, King.jpg" alt="">
+                                    <h4>Champagne Talk</h4>
+                                    <p>King</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="11"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularalbums/HIDDEN GEMS, Various Artists.jpg" alt="">
+                                    <h4>HIDDEN GEMS</h4>
+                                    <p>Various Artists</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="2"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularalbums/Jalwa, Arjan Dhillon.jpg" alt="">
+                                    <h4>Jalwa</h4>
+                                    <p>Arjan Dhillon</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="3"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularalbums/Kabir Singhm, Various Artists.jpg" alt="">
+                                    <h4>Kabir Singhm</h4>
+                                    <p>Various Artists</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="4"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularalbums/Kesariya (From Brahmastra),  Pritam.jpg" alt="">
+                                    <h4>Kesariya (From Brahmastra)</h4>
+                                    <p>Pritam</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="5"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularalbums/Midnights, Taylor Swift.jpg" alt="">
+                                    <h4>Midnights</h4>
+                                    <p>Taylor Swift</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="11"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularalbums/Moosetape, Sidhu Moose Wala.jpg" alt="">
+                                    <h4>Moosetape</h4>
+                                    <p>Sidhu Moose Wala</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="12"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularalbums/No Love, Shubh.jpg" alt="">
+                                    <h4>No Love</h4>
+                                    <p>Shubh</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="13"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularalbums/The Carnival, King.jpg" alt="">
+                                    <h4>The Carnival</h4>
+                                    <p>King</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="14"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_case">
+                                <div class="type_card">
+                                    <img src="img/popularalbums/Two Hearts Never Break The Same, AP Dhillon.jpg" alt="">
+                                    <h4>Two Hearts Never Break The Same</h4>
+                                    <p>AP Dhillon</p>
+
+                                    <div class="play_pause_btn">
+                                        <i class="fa fa-play pbtn" id="15"></i>
+                                        <!-- <i class="fa fa-pause pbtn hide_play_pause_btn"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footercontainer">
+                <div class="coverimgdiv">
+                    <img id="coverimg" src="" alt="">
+                </div>
+                <div class="covernamediv">
+                    <span id="covername"></span>
+                </div>
+
+                <div class="rangebardiv">
+                    <div class="playing_icons">
+                        <!-- <i class="fa fa-2x fa-shuffle"></i> -->
+                        <i class="fa fa-2x fa-backward-step"></i>
+                        <i class="fa fa-2x fa-play" id="masterPlay"></i>
+                        <i class="fa fa-2x fa-forward-step"></i>
+                        <!-- <i class="fa fa-2x fa-repeat"></i> -->
+                    </div>
+                    <div class="progressbardiv">
+                        <div class="realtimediv">
+                            <span id="length_played">00:00</span>
+                        </div>
+                        <div class="progressdiv">
+                            <input type="range" id="range" name="rangebar" min="0" max="100" value="0">
+                        </div>
+                        <div class="tottaltimediv">
+                            <span id="length_total">00:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gifdiv">
+                    <img src="img/gif.gif" id="gif" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/home.js">
+
+
+
+    </script>
+
+</body>
+
+</html>

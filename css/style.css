@@ -1,0 +1,311 @@
+@import url('htps://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ################ Navigation bar################# */
+
+.indexnav {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    list-style-type: none;
+    color: white;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 22px 15px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.logo {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo_text {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+.logo i {
+    font-size: 40px;
+}
+
+#registered i {
+    font-size: 5px;
+    margin-top: -10px;
+
+}
+
+/* ################ First Section################# */
+/* mobile */
+.firstsec {
+    background: url('../img/top_bg.png');
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 80px;
+}
+
+.mobilecover {
+    width: 280px;
+    height: 500px;
+    background-color: white;
+    padding: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 35px 35px 0 0;
+}
+
+.mobilecover img {
+    width: 100%;
+    height: auto;
+}
+
+/* text*/
+.tagline {
+    height: 430px;
+    width: 700px;
+}
+
+.tagline h1 {
+    font-size: 60px;
+    color: white;
+    font-family: arial;
+    margin-bottom: 30px;
+}
+
+.btn a {
+    text-decoration: none;
+
+    color: black;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-family: arial;
+    display: inline-block;
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.04);
+}
+
+/* ################ Second Section################# */
+
+.secondsec {
+    padding: 0 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.secondsec h1 {
+    margin: 70px 0 48px 0px;
+    font-size: 40px;
+    font-family: arial;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 35px 0 20px 0;
+}
+
+.card p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+}
+
+/* ################ Third Section################# */
+.thirdsec {
+    background-image: url('../img/middle_bg.png');
+    height: 379px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdsec h1 {
+    color: white;
+    font-family: arial;
+    font-size: 50px;
+}
+
+/* ################ Fourt Section################# */
+.fourthsec h1 {
+    text-align: center;
+    font-size: 45px;
+    padding: 50px 0;
+}
+
+.questions {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.questions h3 {
+    padding: 25px;
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(247, 245, 245);
+}
+
+.questions h3:hover {
+    background-color: rgb(235, 231, 231);
+    text-decoration: underline;
+}
+
+.questions i {
+    float: right;
+}
+
+.questions span {
+    color: green;
+}
+
+.qans p {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.qans ol {
+    list-style-type: none;
+}
+
+.qans {
+    width: 95%;
+    margin: auto;
+    display: none;
+    /*##### DISPLAY NONE MADE HERE#### */
+}
+
+.fa-solid {
+    display: none;
+}
+
+.ans {
+    display: block;
+}
+
+/* ################ Fifth Section################# */
+
+.fifthsec {
+    background-image: url('../img/btm_bg.png');
+    height: 447px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fifthsec h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    color: white;
+    padding: 25px;
+}
+
+
+
+/* ################ Footer section################# */
+/*Top */
+
+footer {
+    /* padding-top: 80px; */
+    background-color: black;
+}
+
+.topcontainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.footerlist a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerlist li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+.socialcontainer ul {
+    display: flex;
+    gap: 15px;
+    font-size: 30px;
+}
+
+.socialcontainer i {
+    background-color: rgb(49, 48, 48);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.footerlist a:hover,
+.socialcontainer i:hover {
+    color: green;
+}
+
+.btmcontainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    column-gap: 400px;
+}
+
+.hlist ul {
+    display: flex;
+}
+
+.copylist a,
+.hlist a {
+    font-size: 12px;
+    color: grey;
+}
